@@ -209,14 +209,7 @@ bar {
             #inactive_workspace   #222222 #333333 #888888
             #urgent_workspace     #BD2727 #E79E27 #000000
 #}
-
 }
- 
-
-# boder mode windows
-
-#	new_window pixel 10
-
 #floating apps
 	
 	#for_window [class=""] floating enable
