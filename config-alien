@@ -246,7 +246,6 @@ bar {
 	exec --no-startup-id nm-applet 
 	exec --no-startup-id volti
 	exec --no-startup-id qbittorrent
-	exec parcellite --start
 	#exec --no-startup-id /home/pablo/Telegram/Telegram
 
 # volume control
