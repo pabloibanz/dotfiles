@@ -1,6 +1,30 @@
 
-!!current directory color yellow
+!! black
+*color0: #1b1918
+*color8: #766e6b
+!! red
+*color1: #f22c40
+*color9: #f22c40
+!! green
+*color2: #5ab738
+*color10: #5ab738
+!!! yellow
+*color3: #d5911a
+*color11: #d5911a
+!!! blue
+*color4: #407ee7
+*color12: #407ee7
+!!! magenta
+*color5: #6666ea
 *color13: #f0e43d
+!!! cyan
+*color6: #00ad9c
+*color14: #00ad9c
+!!! white
+*color7: #a8a19f
+*color15: #f1efee
+
+
 *background:            #000000
 URxvt*background:       #000000
 *foreground:            #ffffff
@@ -43,6 +67,7 @@ URxvt.secondaryWheel:   1
 *scrollBar:             false
 
 !!clipboard
+URxvt.keysym.Shift-Control-C: per:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 URxvt.perl-ext-common: default,clipboard
