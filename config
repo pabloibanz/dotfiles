@@ -2,28 +2,12 @@
 set $mod Mod4
 set $alt Mod1
 
-
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
-
 # Use Mouse+$mod to drag floating windows to their wanted 
 #position
 floating_modifier  $alt
 
 #terminal
-#bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec urxvt
-
-
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -31,10 +15,6 @@ bindsym $mod+q kill
 
 # start  (a program launcher)
 #bindsym $mod+d exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
@@ -57,7 +37,6 @@ bindsym $mod+Shift+l move up
 bindsym $mod+Shift+ntilde move right
 #usa keyboard
 #bindsym $mod+Shift+semicolon move right
-
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -164,11 +143,6 @@ bindsym $mod+r mode "resize"
 	#client.urgent           #f0be50 #ffffff #000000 #ffff00
 
 
-
-
-# Start i3bar to display a workspace bar (plus the system #information i3status
-# finds out, if available)
-
 bar {
 	
         status_command i3status
@@ -188,9 +162,9 @@ bar {
 	#urgent_workspace    #551A8B #feff3f #000000	
 	#}
 	#colors i3qubesos
-	 #colors {
-          #  background #d2d2d2
-           # statusline #00000
+	#colors {
+        #  background #d2d2d2
+        # statusline #00000
 
             #class               #border #backgr #text
             #focused_workspace    #4c7899 #63a0ff #000000
@@ -200,7 +174,6 @@ bar {
 #}
 
 }
- 
 
 # boder mode windows
 
@@ -259,9 +232,8 @@ bindsym XF86AudioStop exec --no-startup-id playerctl stop
 	bindsym $alt+t exec --no-startup-id /home/pablo/tor-browser_en-US/Browser/start-tor-browser
 	bindsym $alt+k exec --no-startup-id skypeforlinux
 	bindsym $alt+e exec --no-startup-id /home/pablo/Telegram/Telegram
-	bindsym $alt+s exec --no-startup-id 
 	bindsym $alt+b exec --no-startup-id qbittorrent
-	bindsym $alt+u exec --no-startup-id  i3lock
+	bindsym $alt+l exec --no-startup-id  i3lock
 	bindsym $alt+p exec --no-startup-id  pavucontrol
 	
 
