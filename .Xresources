@@ -31,7 +31,6 @@ URxvt*background:       #000000
 *depth:                 32
 !!*fading:                40
 !!*fadeColor:           #93a1a1
-*cursorColor:           #ffffff
 
 
 !-- Xft settings -- !
@@ -43,32 +42,29 @@ Xft.hintstyle:  hintfull
 Xft.hinting:    1
 Xft.antialias:  1
 
-! -- Fonts -- !
-URxvt.font:xft:Inconsolata:pixelsize=17,style=Medium, xft:Symbola:pixelsize=9,style=Regular
-URxvt.boldFont:xft:Inconsolata:style=Bold,pixelsize=19, xft:Symbola:pixelsize=10,style=Regular
+URxvt.intensityStyles:	false
+URxvt.depth:		32
+URxvt.font:		xft:monospace:size=11
+URxvt.scrollBar:	false
+URxvt.perl-lib: /home/pablo/.config/scripts
+URxvt.cursorColor:	white
+URxvt.perl-ext-common:	resize-font,clipboard
+URxvt.url-launcher:	/usr/bin/xdg-open
+URxvt.matcher.button:	1
+URxvt.resize-font.smaller:	C-Down
+URxvt.resize-font.bigger: C-Up
 
-*faceSize:              10
-*bellIsUrgent:          true
-
-!! scroll
-!! do not scroll with output
-URxvt*scrollTtyOutput:      false
-!! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-URxvt*scrollWithBuffer:     true
-!! scroll back to the bottom on keypress
-URxvt*scrollTtyKeypress:    true
-
-!! scrollback buffer
-URxvt.secondaryScreen:  1
-URxvt.secondaryScroll:  0
-URxvt.secondaryWheel:   1
-
-!! scrollbar
-*scrollBar:             false
 
 !!clipboard
 URxvt.keysym.Shift-Control-C: per:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
-URxvt.perl-ext-common: default,clipboard
+
+
+URxvt.colorUL:		#4682B4
+rofi.color-enabled:	true
+rofi.color-window:	#000, #000, #000
+rofi.color-normal:	#111, #819396, #222, #008ed4, #ffffff
+rofi.color-active:	#002b37, #008ed4, #003643, #008ed4, #66c6ff
+rofi.color-urgent: #002b37, #da4281, #003643, #008ed4, #890661
 
