@@ -1,7 +1,6 @@
-
 !! black
-*color0: #1b1918
-*color8: #766e6b
+*color0: #00cc66
+*color8: #00cc66
 !! red
 *color1: #f22c40
 *color9: #f22c40
@@ -12,7 +11,7 @@
 *color3: #d5911a
 *color11: #d5911a
 !!! blue
-*color4: #407ee7
+*color4: #ffcc00
 *color12: #407ee7
 !!! magenta
 *color5: #6666ea
@@ -25,13 +24,9 @@
 *color15: #f1efee
 
 
-*background:            #000000
 URxvt*background:       #000000
 *foreground:            #ffffff
 *depth:                 32
-!!*fading:                40
-!!*fadeColor:           #93a1a1
-
 
 !-- Xft settings -- !
 Xft.dpi:        96
@@ -53,7 +48,6 @@ URxvt.url-launcher:	/usr/bin/xdg-open
 URxvt.matcher.button:	1
 URxvt.resize-font.smaller:	C-Down
 URxvt.resize-font.bigger: C-Up
-
 
 !!clipboard
 URxvt.keysym.Shift-Control-C: per:clipboard:copy
