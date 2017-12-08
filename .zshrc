@@ -83,8 +83,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# update system
 alias U='sudo aptitude -v update'
 alias UG='sudo aptitude -v upgrade'
 alias apagar='sudo shutdown -h now'
 alias I='sudo aptitude -v install'
-alias v='vim'
+
+
+#Directory Shortcuts:
+alias h="cd ~ && ls -a"
+alias D="cd ~/Documents && ls -a"
+alias d="cd ~/Downloads && ls -a"
+alias p="cd ~/Pictures && ls -a"
+alias v="cd ~/Videos && ls -a"
+alias m="cd ~/Music && ls -a"
+alias b="cd ~/Books && ls -a"
+
+#SSH_CONNECTION
+alias pi="ssh -l pablo 192.168.1.6"
