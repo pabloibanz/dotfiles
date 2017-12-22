@@ -89,16 +89,16 @@ alias U='sudo aptitude -v update'
 alias UG='sudo aptitude -v upgrade'
 alias apagar='sudo shutdown -h now'
 alias I='sudo aptitude -v install'
-
+alias v='vim'
 
 #Directory Shortcuts:
-alias h="cd ~ && ls -a"
-alias D="cd ~/Documents && ls -a"
-alias d="cd ~/Downloads && ls -a"
-alias p="cd ~/Pictures && ls -a"
-alias v="cd ~/Videos && ls -a"
-alias m="cd ~/Music && ls -a"
-alias b="cd ~/Books && ls -a"
-
+alias gh="cd ~ && ls -a"
+alias gO="cd ~/Documents && ls -a"
+alias gO="cd ~/Downloads && ls -a"
+alias gp="cd ~/Pictures && ls -a"
+alias gv="cd ~/Videos && ls -a"
+alias gm="cd ~/Music && ls -a"
+alias gb="cd ~/Books && ls -a"
+alias gt='cd ~/transmission-daemon/Downloads/ && ls -a'
 #SSH_CONNECTION
 alias pi="ssh -l pablo 192.168.1.6"

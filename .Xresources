@@ -1,25 +1,25 @@
 !! black
 *color0: #00cc66
 *color8: #00cc66
-!! red
+!!! red
 *color1: #f22c40
 *color9: #f22c40
-!! green
+!!! green
 *color2: #5ab738
 *color10: #5ab738
-!!! yellow
+!!!! yellow
 *color3: #d5911a
 *color11: #d5911a
-!!! blue
+!!!! blue
 *color4: #ffcc00
 *color12: #407ee7
-!!! magenta
+!!!! magenta
 *color5: #6666ea
 *color13: #f0e43d
-!!! cyan
+!!!! cyan
 *color6: #00ad9c
 *color14: #00ad9c
-!!! white
+!!!! white
 *color7: #a8a19f
 *color15: #f1efee
 
@@ -62,3 +62,10 @@ rofi.color-normal:	#111, #819396, #222, #008ed4, #ffffff
 rofi.color-active:	#002b37, #008ed4, #003643, #008ed4, #66c6ff
 rofi.color-urgent: #002b37, #da4281, #003643, #008ed4, #890661
 
+
+rofi.fake-transparency:	true
+rofi.lines:		3
+rofi.bw:		0
+rofi.opacity:		"10"
+rofi.hide-scrollbar:	true
+rofi.width: 30
