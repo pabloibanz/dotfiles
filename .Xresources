@@ -2,13 +2,12 @@ URxvt.background: #000000
 URxvt.cursorColor: #FDA53C
 URxvt.foreground: #ffffff
 !black
-*color0: #222222
+*color0: #ffffff
 *color8: #666666
 !!red
 *color1: #E84F4F
 *color9: #D23D3D
 !!green
-*color2: #B7CE42
 *color10: #BDE077
 !!yellow
 *color3: #FEA63C
@@ -25,7 +24,7 @@ URxvt.foreground: #ffffff
 !!white
 *color7: #DDDDDD
 *color15: #CCCCCC
-
+*color2: #ffffff
 
 Xft.rgba:       rgb
 Xft.autohint:   0
