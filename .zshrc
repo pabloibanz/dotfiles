@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="kolo"
+ZSH_THEME="kolo"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -90,15 +90,18 @@ alias UG='sudo aptitude -v upgrade'
 alias apagar='sudo shutdown -h now'
 alias I='sudo aptitude -v install'
 alias v='vim'
-
+alias e='emacs -nw'
 #Directory Shortcuts:
 alias gh="cd ~ && ls -a"
-alias gO="cd ~/Documents && ls -a"
-alias gO="cd ~/Downloads && ls -a"
+alias gdo="cd ~/Documents && ls -a"
+alias gdw="cd ~/Downloads && ls -a"
 alias gp="cd ~/Pictures && ls -a"
 alias gv="cd ~/Videos && ls -a"
 alias gm="cd ~/Music && ls -a"
 alias gb="cd ~/Books && ls -a"
-alias gt='cd ~/transmission-daemon/Downloads/ && ls -a'
+alias gt='cd /media/hd/torrents/transmission-daemon/Downloads/ && ls -a'
 #SSH_CONNECTION
 alias pi="ssh -l pablo 192.168.1.6"
+#vim mode
+#set -o vi
+
