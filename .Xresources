@@ -35,7 +35,8 @@ URxvt*boldFont:       xft:DejaVu Sans Mono:style=Bold:pixelsize=13
 URxvt*italicFont:     xft:DejaVu Sans Mono:style=Oblique:pixelsize=13
 URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=BoldOblique:pixelsize=13
 
-
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false 
 URxvt.scrollBar:	false
 URxvt.perl-lib: /home/pablo/.config/scripts
 !URxvt.cursorColor:	white
@@ -65,3 +66,5 @@ rofi.bw:		0
 rofi.opacity:		"10"
 rofi.hide-scrollbar:	true
 rofi.width: 30
+
+

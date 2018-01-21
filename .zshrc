@@ -101,7 +101,8 @@ alias gm="cd ~/Music && ls -a"
 alias gb="cd ~/Books && ls -a"
 alias gt='cd /media/hd/torrents/transmission-daemon/Downloads/ && ls -a'
 #SSH_CONNECTION
-alias pi="ssh -l pablo 192.168.1.6"
+alias pideb="ssh -l pablo 192.168.1.6"
+alias piarch='ssh -l  pablo 192.168.1.10'
 #vim mode
 #set -o vi
 
