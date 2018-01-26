@@ -92,6 +92,7 @@ alias I='sudo aptitude -v install'
 alias v='vim'
 alias e='emacs -nw'
 #Directory Shortcuts:
+alias du="du -sh *"
 alias gh="cd ~ && ls -a"
 alias gdo="cd ~/Documents && ls -a"
 alias gdw="cd ~/Downloads && ls -a"
@@ -101,8 +102,8 @@ alias gm="cd ~/Music && ls -a"
 alias gb="cd ~/Books && ls -a"
 alias gt='cd /media/hd/torrents/transmission-daemon/Downloads/ && ls -a'
 #SSH_CONNECTION
-alias pideb="ssh -l pablo 192.168.1.6"
-alias piarch='ssh -l  pablo 192.168.1.10'
+#alias pideb="ssh -l pablo 192.168.1.6"
+alias piarch='ssh -l  pablo 192.168.1.6'
 #vim mode
 #set -o vi
 
