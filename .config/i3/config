@@ -130,6 +130,8 @@ bar {
 	font pango: Monospace 8
 }
 
+
+
 #floating apps
 	
 #for_window [class=""] floating enable
