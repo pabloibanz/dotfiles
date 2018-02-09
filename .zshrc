@@ -85,8 +85,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # update system
-alias U='sudo aptitude -v update'
-alias UG='sudo aptitude -v upgrade'
+alias U='sudo  apt update'
+alias UG='sudo apt upgrade'
 alias apagar='sudo shutdown -h now'
 alias I='sudo aptitude -v install'
 alias v='vim'
