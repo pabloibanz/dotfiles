@@ -33,8 +33,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+q kill
 
 # start  (a program launcher)
-#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 ###---Arrow Keys---###
 bindsym $mod+Left		focus left
