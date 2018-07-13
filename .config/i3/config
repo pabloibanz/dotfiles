@@ -1,12 +1,11 @@
 ###---Basic Definitions---###
-font pango:monospace 9
 set $mod Mod4
 set $term urxvt
 set $alt Mod1
-
+font pango:Monaco for Powerline 9 
 
 ###---Starting External Scripts---###
-exec --no-startup-id nm-applet 
+#exec --no-startup-id nm-applet 
 exec --no-startup-id qbittorrent
 ###---Audio---###
 
@@ -129,7 +128,7 @@ bar {
 	
         status_command i3status
 	status_command i3status -c  ~/.config/i3/i3status.conf
-	font pango: Monospace 8
+	font pango: Monaco for Powerline 8 
 }
 
 
@@ -146,21 +145,20 @@ assign [instance="^qbittorrent$"] 10
 assign [class="google-chrome"] 1
 assign [instance="^gedit$"] 3
 assign [instance="^vlc$"] 5
-assign [instance="^mplayer$"] 5
+assign [class="^MPlayer$"] 5
 assign [instance="^pavucontrol$"] 8
 assign [instance="^evince$"] 4
 assign [instance="^Telegram$"] 6
-assign [instance="^skypeforlinux$"] 7
 assign [instance="^VirtualBox$"] 9
 
 # execute keys
 	
 bindsym $alt+m exec --no-startup-id $term -e mocp ~/Music/ 
 bindsym $alt+Shift+m exec --no-startup-id  mocp -x 
-bindsym $alt+q exec --no-startup-id nautilus
+bindsym $alt+q exec --no-startup-id nautilus 
 bindsym $alt+a exec --no-startup-id pcmanfm
 bindsym $alt+g exec --no-startup-id google-chrome-stable
-bindsym $alt+f exec --no-startup-id ~/firefox/firefox
+bindsym $alt+f exec --no-startup-id firefox
 bindsym $alt+c exec --no-startup-id chromium
 bindsym $alt+t exec --no-startup-id /home/pablo/tor-browser_en-US/Browser/start-tor-browser
 bindsym $alt+e exec --no-startup-id /home/pablo/Telegram/Telegram
@@ -172,6 +170,6 @@ bindsym $alt+p exec --no-startup-id  pavucontrol
 bindsym $alt+F11 exec --no-startup-id $term -e ~/.config/scripts/lights.sh
 
 #Mount other drives:
-bindsym $alt+F1 exec --no-startup-id $term -e sudo mount /dev/sdc1 /media/extra-hd/
+bindsym $alt+F1 exec --no-startup-id $term -e sudo mount /dev/sdf1 /media/extra-hd/
 #umount
-bindsym $alt+F12  exec --no-startup-id $term -e sudo umount /dev/sdc1 
+bindsym $alt+F12  exec --no-startup-id $term -e sudo umount /dev/sdf1 
