@@ -1,23 +1,30 @@
 urxvt*foreground: white
 urxvt*background: black
 
-*color0:  #2E3436
-*color1:  #a40000
-*color2:  #4E9A06
-*color3:  #C4A000
-*color4:  #3465A4
-*color5:  #75507B
-*color6:  #ce5c00
-*color7:  #babdb9
-*color8:  #555753
-*color9:  #EF2929
-*color10: #8AE234
-*color11: #FCE94F
-*color12: #729FCF
-*color13: #AD7FA8
-*color14: #fcaf3e
-*color15: #EEEEEC
-
+!! black
+*color0: #1b1918
+*color8: #766e6b
+!!! red
+*color1: #f22c40
+*color9: #f22c40
+!!! green
+*color2: #5ab738
+*color10: #5ab738
+!!! yellow
+*color3: #d5911a
+*color11: #d5911a
+!!! blue
+*color4: #407ee7
+*color12: #407ee7
+!!! magenta
+*color5: #6666ea
+*color13: #6666ea
+!!! cyan
+*color6: #00ad9c
+*color14: #00ad9c
+!!! white
+*color7: #a8a19f
+*color15: #f1efee
 
 Xft.rgba:       rgb
 Xft.autohint:   0
@@ -29,13 +36,20 @@ Xft.antialias:  1
 URxvt.intensityStyles:	false
 URxvt.depth:		32
 !FONTS
-!URxvt.font:		xft:monospace:size=11
-URxvt*font:           xft:DejaVu Sans Mono:style=Book:pixelsize=13
-URxvt*boldFont:       xft:DejaVu Sans Mono:style=Bold:pixelsize=13
-URxvt*italicFont:     xft:DejaVu Sans Mono:style=Oblique:pixelsize=13
-URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=BoldOblique:pixelsize=13
 
-URxvt.cursorBlink: true
+!URxvt*font:           xft:DejaVu Sans Mono:style=Book:pixelsize=12
+!URxvt*boldFont:       xft:DejaVu Sans Mono:style=Bold:pixelsize=12
+!URxvt*italicFont:     xft:DejaVu Sans Mono:style=Oblique:pixelsize=12
+!URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=BoldOblique:pixelsize=12
+
+URxvt*font:                 xft:Monaco for Powerline:regular:size=10
+URxvt*imFont:               xft:Monaco for Powerline:regular:size=10
+URxvt*boldFont:             xft:Monaco for Powerline:bold:size=10
+URxvt*italicFont:           xft:Monaco for Powerline:italic:size=10
+URxvt*boldItalicFont:       xft:Monaco for Powerline:bold:italic:size=10
+
+
+URxvt.cursorBlink: false 
 URxvt.cursorUnderline: false 
 URxvt.scrollBar:	false
 URxvt.perl-lib: /home/pablo/.config/scripts
