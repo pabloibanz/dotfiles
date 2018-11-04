@@ -18,8 +18,8 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 # Screen brightness controls
 #need package "light" of github https://github.com/haikarainen/light/#installation
 
-bindsym $alt+9 exec --no-startup-id  $term -e sudo light -S 15 
-
+bindsym $alt+9 exec --no-startup-id  $term -e  light -U 5 
+bindsym $alt+0 exec --no-startup-id  $term -e  light -A 5 
 ## Media player controls
 bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
