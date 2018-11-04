@@ -2,11 +2,12 @@
 set $mod Mod4
 set $term urxvt
 set $alt Mod1
-font pango:Monaco for Powerline 9 
+font pango:Monaco for Powerline 15
 
 ###---Starting External Scripts---###
-#exec --no-startup-id nm-applet 
-exec --no-startup-id qbittorrent
+exec --no-startup-id nm-applet 
+#exec --no-startup-id qbittorrent
+exec --no-startup-id dunst
 ###---Audio---###
 
 #Pulse Audio controls
@@ -14,6 +15,10 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound vo
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
+# Screen brightness controls
+#need package "light" of github https://github.com/haikarainen/light/#installation
+
+bindsym $alt+9 exec --no-startup-id  $term -e sudo light -S 15 
 
 ## Media player controls
 bindsym XF86AudioPlay exec playerctl play
@@ -34,7 +39,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+q kill
 
 # start  (a program launcher)
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id  dmenu_run 
 
 ###---Arrow Keys---###
 bindsym $mod+Left		focus left
@@ -125,10 +130,10 @@ bindsym $mod+Shift+u resize shrink height 10 px or 10 ppt
 #I3STATUS
 
 bar {
-	
+       	tray_output primary
         status_command i3status
 	status_command i3status -c  ~/.config/i3/i3status.conf
-	font pango: Monaco for Powerline 8 
+	font pango: Monaco for Powerline 11
 }
 
 
@@ -140,14 +145,9 @@ bar {
 #Assigning some apps to specifics workspaces
 assign [class="Firefox"] 1
 assign [class="Chromium"] 1
-assign [instance="^transmission-gtk$"] 10
 assign [instance="^qbittorrent$"] 10
 assign [class="google-chrome"] 1
-assign [instance="^gedit$"] 3
-assign [instance="^vlc$"] 5
-assign [class="^MPlayer$"] 5
 assign [instance="^pavucontrol$"] 8
-assign [instance="^evince$"] 4
 assign [instance="^Telegram$"] 6
 assign [instance="^VirtualBox$"] 9
 
@@ -169,7 +169,3 @@ bindsym $alt+u exec --no-startup-id  i3lock
 bindsym $alt+p exec --no-startup-id  pavucontrol
 bindsym $alt+F11 exec --no-startup-id $term -e ~/.config/scripts/lights.sh
 
-#Mount other drives:
-bindsym $alt+F1 exec --no-startup-id $term -e sudo mount /dev/sdf1 /media/extra-hd/
-#umount
-bindsym $alt+F12  exec --no-startup-id $term -e sudo umount /dev/sdf1 

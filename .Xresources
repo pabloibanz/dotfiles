@@ -26,6 +26,8 @@ urxvt*background: black
 *color7: #a8a19f
 *color15: #f1efee
 
+
+
 Xft.rgba:       rgb
 Xft.autohint:   0
 Xft.lcdfilter:  lcddefault
@@ -37,15 +39,16 @@ URxvt.intensityStyles:	false
 URxvt.depth:		32
 !FONTS
 
-!URxvt*font:           xft:DejaVu Sans Mono:style=Book:pixelsize=12
-!URxvt*boldFont:       xft:DejaVu Sans Mono:style=Bold:pixelsize=12
-!URxvt*italicFont:     xft:DejaVu Sans Mono:style=Oblique:pixelsize=12
-!URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=BoldOblique:pixelsize=12
+!URxvt*font:           xft:DejaVu Sans Mono:style=Book:pixelsize=32
+!URxvt*boldFont:       xft:DejaVu Sans Mono:style=Bold:pixelsize=32
+!URxvt*italicFont:     xft:DejaVu Sans Mono:style=Oblique:pixelsize=32
+!URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=BoldOblique:pixelsize=32
 
-URxvt*font:                 xft:Monaco for Powerline:regular:size=10
-URxvt*imFont:               xft:Monaco for Powerline:regular:size=10
-URxvt*boldFont:             xft:Monaco for Powerline:bold:size=10
-URxvt*italicFont:           xft:Monaco for Powerline:italic:size=10
+URxvt*font:                 xft:Monaco for Powerline:regular:size=32
+URxvt*imFont:               xft:Monaco for Powerline:regular:size=32
+
+URxvt*boldFont:             xft:Monaco for Powerline:bold:size=32
+URxvt*italicFont:           xft:Monaco for Powerline:italic:size=32
 URxvt*boldItalicFont:       xft:Monaco for Powerline:bold:italic:size=10
 
 
