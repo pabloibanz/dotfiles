@@ -85,12 +85,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # update system
-alias U='sudo  apt update'
-alias UG='sudo apt upgrade'
+#alias U='sudo  apt update'
+#alias UG='sudo apt upgrade'
 alias apagar='sudo shutdown -h now'
-alias I='sudo aptitude -v install'
+#alias I='sudo aptitude -v install'
 alias v='vim'
-alias e='emacs -nw'
 #Directory Shortcuts:
 alias du="du -sh *"
 alias gh="cd ~ && ls -a"
@@ -102,8 +101,8 @@ alias gm="cd ~/Music && ls -a"
 alias gb="cd ~/Books && ls -a"
 alias gt='cd /media/hd/torrents/transmission-daemon/Downloads/ && ls -a'
 #SSH_CONNECTION
-#alias pideb="ssh -l pablo 192.168.1.6"
-alias piarch='ssh -l  pablo 192.168.1.6'
+alias pideb="ssh -l pablo 192.168.1.6"
+alias server='ssh -l  pablo 192.168.1.5'
 #vim mode
 #set -o vi
 #programs
@@ -112,10 +111,10 @@ alias python="python3"
 # Import colorscheme from 'wal' asynchronously
 # # &   # Run the process in the background.
 # # (  ) # Hide shell job control messages.
- (cat ~/.cache/wal/sequences &)
+# (cat ~/.cache/wal/sequences &)
 #
 # # Alternative (blocks terminal for 0-3ms)
- cat ~/.cache/wal/sequences
+# cat ~/.cache/wal/sequences
 #
 # # To add support for TTYs this line can be optionally added.
- source ~/.cache/wal/colors-tty.sh
+# source ~/.cache/wal/colors-tty.sh
