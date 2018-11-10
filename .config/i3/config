@@ -7,6 +7,7 @@ font pango:Monaco for Powerline 15
 ###---Starting External Scripts---###
 exec --no-startup-id nm-applet 
 #exec --no-startup-id qbittorrent
+exec --no-startup-id nextcloud
 exec --no-startup-id dunst
 ###---Audio---###
 
