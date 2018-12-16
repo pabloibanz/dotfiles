@@ -26,8 +26,7 @@ urxvt*background: black
 *color7: #a8a19f
 *color15: #f1efee
 
-
-
+Xft.dpi: 144
 Xft.rgba:       rgb
 Xft.autohint:   0
 Xft.lcdfilter:  lcddefault
@@ -37,19 +36,13 @@ Xft.antialias:  1
 
 URxvt.intensityStyles:	false
 URxvt.depth:		32
-!FONTS
 
-!URxvt*font:           xft:DejaVu Sans Mono:style=Book:pixelsize=32
-!URxvt*boldFont:       xft:DejaVu Sans Mono:style=Bold:pixelsize=32
-!URxvt*italicFont:     xft:DejaVu Sans Mono:style=Oblique:pixelsize=32
-!URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=BoldOblique:pixelsize=32
 
-URxvt*font:                 xft:Monaco for Powerline:regular:size=32
-URxvt*imFont:               xft:Monaco for Powerline:regular:size=32
+! -- Fonts -- !
+URxvt.font: xft:Inconsolata:pixelsize=21:antialias=true:hinting=full,xft:Symbola:pixelsize=19:antialias=true:hinting=full
+URxvt.boldFont: xft:Inconsolata:style=bold:pixelsize=21:antialias=true:hinting=full,xft:Symbola:pixelsize=19:antialias=true:hinting=full
 
-URxvt*boldFont:             xft:Monaco for Powerline:bold:size=32
-URxvt*italicFont:           xft:Monaco for Powerline:italic:size=32
-URxvt*boldItalicFont:       xft:Monaco for Powerline:bold:italic:size=10
+
 
 
 URxvt.cursorBlink: false 
@@ -64,7 +57,7 @@ URxvt.resize-font.smaller:	C-Down
 URxvt.resize-font.bigger: C-Up
 
 !!clipboard
-URxvt.keysym.Shift-Control-C: per:clipboard:copy
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 
