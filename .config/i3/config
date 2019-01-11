@@ -163,4 +163,4 @@ bindsym $alt+r exec --no-startup-id $term -e ranger ~/
 bindsym $alt+Shift+r exec --no-startup-id $term -e sudo ranger ~/ 
 bindsym $alt+u exec --no-startup-id  i3lock
 bindsym $alt+p exec --no-startup-id  pavucontrol
-
+bindsym $alt+i exec --no-startup-id  $term -e screen -m irssi

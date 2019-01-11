@@ -1,4 +1,4 @@
-urxvt*foreground: white
+urxvt*foreground: white 
 urxvt*background: black
 
 !! black
@@ -39,8 +39,8 @@ URxvt.depth:		32
 
 
 ! -- Fonts -- !
-URxvt.font: xft:Inconsolata:pixelsize=21:antialias=true:hinting=full,xft:Symbola:pixelsize=19:antialias=true:hinting=full
-URxvt.boldFont: xft:Inconsolata:style=bold:pixelsize=21:antialias=true:hinting=full,xft:Symbola:pixelsize=19:antialias=true:hinting=full
+URxvt.font: xft:Inconsolata:pixelsize=29:antialias=true:hinting=full,xft:Symbola:pixelsize=29:antialias=true:hinting=full
+URxvt.boldFont: xft:Inconsolata:style=bold:pixelsize=29:antialias=true:hinting=full,xft:Symbola:pixelsize=29:antialias=true:hinting=full
 
 
 
