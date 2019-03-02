@@ -4,12 +4,16 @@ set $term urxvt
 set $alt Mod1
 font pango:Monaco for Powerline 10
 
+#keyboard layaout
+bindsym Control+$alt+e exec --no-startup-id setxkbmap es
+bindsym Control+$alt+u exec --no-startup-id setxkbmap us
+
 ###---Starting External Scripts---###
 exec --no-startup-id nm-applet 
 #exec --no-startup-id qbittorrent
 exec --no-startup-id dunst
-###---Audio---###
 
+###---Audio---###
 #Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
