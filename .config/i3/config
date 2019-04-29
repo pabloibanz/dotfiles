@@ -45,8 +45,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+q kill
 
 # start  (a program launcher)
-bindsym $mod+d exec --no-startup-id  dmenu_run 
-
+bindsym $mod+d exec "dmenu_run -fn 'Powerline-18'"
 ###---Arrow Keys---###
 bindsym $mod+Left		focus left
 bindsym $mod+Down		focus down
@@ -159,12 +158,12 @@ assign [instance="^Telegram$"] 6
 	
 bindsym $alt+m exec --no-startup-id $term -e mocp ~/Music/ 
 bindsym $alt+Shift+m exec --no-startup-id  mocp -x 
-bindsym $alt+a exec --no-startup-id notepadqq 
-bindsym $alt+q exec --no-startup-id pcmanfm
+bindsym $alt+e exec --no-startup-id notepadqq 
+bindsym $alt+q exec --no-startup-id nautilus 
 bindsym $alt+f exec --no-startup-id firefox
 bindsym $alt+c exec --no-startup-id chromium
-bindsym $alt+t exec --no-startup-id /home/pablo/tor-browser_en-US/Browser/start-tor-browser
-bindsym $alt+e exec --no-startup-id /home/pablo/Telegram/Telegram
+bindsym $alt+o exec --no-startup-id /home/pablo/tor-browser_en-US/Browser/start-tor-browser
+bindsym $alt+t exec --no-startup-id /home/pablo/Telegram/Telegram
 bindsym $alt+r exec --no-startup-id $term -e ranger ~/ 
 bindsym $alt+Shift+r exec --no-startup-id $term -e sudo ranger ~/ 
 bindsym $alt+u exec --no-startup-id  i3lock
