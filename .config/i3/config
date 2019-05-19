@@ -31,8 +31,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # screenshots (maim program) 
-bindsym Print exec --no-startup-id maim pic-full-"screenshot"-"$(date '+%y%m%d-%H%M-%S').png"
-
+bindsym Control+Print exec --no-startup-id maim pic-full-"screenshot"-"$(date '+%y%m%d-%H%M-%S').png"
+bindsym Control+Mod1+s exec --no-startup-id maim --hidecursor -s screenshot-mouse.jpg
 ###---Basic Bindings---###
 #terminal
 bindsym $mod+Return exec $term
@@ -169,3 +169,4 @@ bindsym $alt+Shift+r exec --no-startup-id $term -e sudo ranger ~/
 bindsym $alt+u exec --no-startup-id  i3lock
 bindsym $alt+p exec --no-startup-id  pavucontrol
 bindsym $alt+i exec --no-startup-id  $term -e screen -m irssi
+
