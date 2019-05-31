@@ -45,7 +45,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+q kill
 
 # start  (a program launcher)
-bindsym $mod+d exec "dmenu_run -fn 'Powerline-18'"
+bindsym $mod+d exec "dmenu_run -fn 'Hack Nerd Font Mono-20'"
 ###---Arrow Keys---###
 bindsym $mod+Left		focus left
 bindsym $mod+Down		focus down
