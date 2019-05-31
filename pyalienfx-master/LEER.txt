@@ -1,1 +1,0 @@
-python-gtk2-dev.deb #requeridoparadebian

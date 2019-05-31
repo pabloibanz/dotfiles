@@ -1,4 +1,0 @@
-*.{pyc,pyo}
-Profiles/
-packet.log
-default.cfg
