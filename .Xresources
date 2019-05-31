@@ -33,15 +33,14 @@ Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintfull
 Xft.hinting:    1
 Xft.antialias:  1
-Xcursor.theme: Breeze Light
+Xcursor.theme: Adwaita 
 Xcursor.size: 40
 URxvt.intensityStyles:	false
 URxvt.depth:		32
 
 
 ! -- Fonts -- !
-URxvt.font: xft:Inconsolata:pixelsize=29:antialias=true:hinting=full,xft:Symbola:pixelsize=29:antialias=true:hinting=full
-URxvt.boldFont: xft:Inconsolata:style=bold:pixelsize=29:antialias=true:hinting=full,xft:Symbola:pixelsize=29:antialias=true:hinting=full
+URxvt.font: xft:Hack Nerd Font Mono:pixelsize=19:antialias=true:hinting=full,xft:Symbola:pixelsize=19:antialias=true:hinting=full
 
 
 
