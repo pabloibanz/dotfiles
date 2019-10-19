@@ -34,18 +34,16 @@ Xft.hintstyle:  hintfull
 Xft.hinting:    1
 Xft.antialias:  1
 Xcursor.theme: Adwaita 
-Xcursor.size: 45 
+!Xcursor.size: 45 
 URxvt.intensityStyles:	false
 URxvt.depth:		32
 
 
 ! -- Fonts -- !
-URxvt.font: xft:Hack Nerd Font Mono:pixelsize=19:antialias=true:hinting=full,xft:Symbola:pixelsize=19:antialias=true:hinting=full
+URxvt.font: xft:DejaVu Sans Mono:style=Book:pixelsize=25
 
-
-
-URxvt.cursorBlink: false 
-URxvt.cursorUnderline: false 
+URxvt.cursorBlink: true 
+URxvt.cursorUnderline: true 
 URxvt.scrollBar:	false
 URxvt.perl-lib: /home/pablo/.config/scripts
 !URxvt.cursorColor:	white

@@ -2,7 +2,7 @@
 set $mod Mod4
 set $term urxvt
 set $alt Mod1
-font pango:Hack Nerd Font Mono 8
+font pango:Hack Nerd Font Mono 9 
 
 #keyboard layaout
 bindsym Control+$alt+e exec --no-startup-id setxkbmap es
@@ -12,17 +12,15 @@ bindsym Control+$alt+u exec --no-startup-id setxkbmap us
 exec --no-startup-id nm-applet 
 #exec --no-startup-id qbittorrent
 exec --no-startup-id dunst
-exec --no-startup-id caffeine
 ###---Audio---###
-#Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+#Pulse Audio controls alsa
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 1+ unmute #increase sound volume
+bindsym XF86AudioLowerVolume exec amixer -q set Master 1- unmute #decrease sound volume
+bindsym XF86AudioMute exec amixer -q set Master toggle  #mute sound
 
 # Screen brightness controls
-#need package "light" of github https://github.com/haikarainen/light/#installation
-bindsym XF86MonBrightnessDown exec light -U 5
-bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5; exec notify-send 'brightness down';
+bindsym XF86MonBrightnessUp exec light -A 5; exec notify-send 'brightness up';
 
 ## Media player controls
 bindsym XF86AudioPlay exec playerctl play
@@ -138,7 +136,7 @@ bar {
        	tray_output primary
         status_command i3status
 	status_command i3status -c  ~/.config/i3/i3status.conf
-	font pango: Hack Nerd Font Mono 7 
+	font pango: Hack Nerd Font Mono 9
 }
 
 
@@ -151,22 +149,22 @@ bar {
 assign [class="Firefox"] 1
 assign [class="Chromium"] 1
 assign [instance="^qbittorrent$"] 10
-assign [instance="^pavucontrol$"] 8
+assign [instance="^alsamixer$"] 8
 assign [instance="^Telegram$"] 6
 
 # execute keys
 	
 bindsym $alt+m exec --no-startup-id $term -e mocp ~/Music/ 
 bindsym $alt+Shift+m exec --no-startup-id  mocp -x 
-bindsym $alt+e exec --no-startup-id notepadqq 
+bindsym $alt+e exec --no-startup-id leafpad 
 bindsym $alt+q exec --no-startup-id nautilus 
-bindsym $alt+f exec --no-startup-id firefox
-bindsym $alt+c exec --no-startup-id chromium
+bindsym $alt+f exec --no-startup-id firefox -private-window
+bindsym $alt+c exec --no-startup-id qalculate-gtk 
 bindsym $alt+o exec --no-startup-id /home/pablo/tor-browser_en-US/Browser/start-tor-browser
 bindsym $alt+t exec --no-startup-id /home/pablo/Telegram/Telegram
-bindsym $alt+r exec --no-startup-id $term -e ranger ~/ 
 bindsym $alt+Shift+r exec --no-startup-id $term -e sudo ranger ~/ 
 bindsym $alt+u exec --no-startup-id  i3lock
-bindsym $alt+p exec --no-startup-id  pavucontrol
-bindsym $alt+i exec --no-startup-id  $term -e screen -m irssi
-
+bindsym $alt+a exec --no-startup-id  $term -e alsamixer
+bindsym $alt+i exec --no-startup-id  $term -e weechat 
+bindsym $alt+r exec --no-startup-id  $term -e ranger ~/
+#bindsym $alt+r exec --no-startup-id rofi -show run -modi run -location 0 -width 1200 -separator-style none -font "Hack Nerd Font Mono 30" -columns 1 -rows 1   
