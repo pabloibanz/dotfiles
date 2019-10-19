@@ -2,7 +2,8 @@
 set $mod Mod4
 set $term urxvt
 set $alt Mod1
-font pango:Hack Nerd Font Mono 9 
+#font pango:Hack Nerd Font Mono 9 
+font pango:  Terminus 8 
 
 #keyboard layaout
 bindsym Control+$alt+e exec --no-startup-id setxkbmap es
@@ -136,7 +137,7 @@ bar {
        	tray_output primary
         status_command i3status
 	status_command i3status -c  ~/.config/i3/i3status.conf
-	font pango: Hack Nerd Font Mono 9
+	font pango: Terminus 9 
 }
 
 
@@ -161,7 +162,7 @@ bindsym $alt+q exec --no-startup-id nautilus
 bindsym $alt+f exec --no-startup-id firefox -private-window
 bindsym $alt+c exec --no-startup-id qalculate-gtk 
 bindsym $alt+o exec --no-startup-id /home/pablo/tor-browser_en-US/Browser/start-tor-browser
-bindsym $alt+t exec --no-startup-id /home/pablo/Telegram/Telegram
+bindsym $alt+t exec --no-startup-id thunderbird 
 bindsym $alt+Shift+r exec --no-startup-id $term -e sudo ranger ~/ 
 bindsym $alt+u exec --no-startup-id  i3lock
 bindsym $alt+a exec --no-startup-id  $term -e alsamixer
