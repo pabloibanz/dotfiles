@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="clean"
+ZSH_THEME="af-magic"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -85,11 +85,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # update system
-alias U='sudo  apt update'
-alias UG='sudo apt upgrade'
+#alias U='sudo  apt update'
+#alias UG='sudo apt upgrade'
 alias apagar='sudo shutdown -h now'
-alias I='sudo aptitude -v install'
+#alias I='sudo aptitude -v install'
 alias v='vim'
+alias music='ncmpcpp'
 alias e='emacs -nw'
 #mount samba#
 alias mount-samba="sudo mount -t cifs -o username=transuser //192.168.1.6/raspi /media/samba-torrent/"           
@@ -100,6 +101,7 @@ alias du="du -sh *"
 alias gh="cd ~ && ls -a"
 alias gdo="cd ~/Documents && ls -a"
 alias gdw="cd ~/Downloads && ls -a"
+alias gdt="cd ~/dotfiles && ls -a"
 alias gw="cd ~/Work && ls -a"
 alias gp="cd ~/Pictures && ls -a"
 alias gv="cd ~/Videos && ls -a"
@@ -111,7 +113,7 @@ alias gt='cd /media/samba-torrent/qbittorrent/download/ && ls -a'
 alias pideb="ssh -l pablo 192.168.1.6"
 alias piarch='ssh -l  pablo 192.168.1.5'
 #SAMBA
-alias smb='smbclient -U qbtuser //192.168.1.6/raspi'
+alias smb='smbclient -U transuser //192.168.1.6/raspi'
 #vim mode
 #set -o vi
 #programs
