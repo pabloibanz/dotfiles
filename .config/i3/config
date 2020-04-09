@@ -150,16 +150,16 @@ bar {
 assign [class="Firefox"] 1
 assign [class="Chromium"] 1
 assign [instance="^qbittorrent$"] 10
-assign [instance="^alsamixer$"] 8
+assign [instance="^alsamixer$"] 10
 assign [instance="^Telegram$"] 6
 
 # execute keys
 	
 bindsym $alt+m exec --no-startup-id $term -e mocp ~/Music/ 
 bindsym $alt+Shift+m exec --no-startup-id  mocp -x 
-bindsym $alt+e exec --no-startup-id leafpad 
-bindsym $alt+q exec --no-startup-id nautilus 
-bindsym $alt+f exec --no-startup-id firefox -private-window
+bindsym $alt+e exec --no-startup-id  
+bindsym $alt+q exec --no-startup-id doublecmd 
+bindsym $alt+f exec --no-startup-id firefox 
 bindsym $alt+c exec --no-startup-id qalculate-gtk 
 bindsym $alt+o exec --no-startup-id /home/pablo/tor-browser_en-US/Browser/start-tor-browser
 bindsym $alt+t exec --no-startup-id thunderbird 
@@ -168,4 +168,5 @@ bindsym $alt+u exec --no-startup-id  i3lock
 bindsym $alt+a exec --no-startup-id  $term -e alsamixer
 bindsym $alt+i exec --no-startup-id  $term -e weechat 
 bindsym $alt+r exec --no-startup-id  $term -e ranger ~/
+bindsym $alt+g exec --no-startup-id  chromium -incognito
 #bindsym $alt+r exec --no-startup-id rofi -show run -modi run -location 0 -width 1200 -separator-style none -font "Hack Nerd Font Mono 30" -columns 1 -rows 1   

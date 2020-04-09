@@ -89,13 +89,11 @@ source $ZSH/oh-my-zsh.sh
 #alias UG='sudo apt upgrade'
 alias apagar='sudo shutdown -h now'
 #alias I='sudo aptitude -v install'
-alias v='vim'
+alias v='nvim'
 alias music='ncmpcpp'
 alias e='emacs -nw'
-#mount samba#
-alias mount-samba="sudo mount -t cifs -o username=transuser //192.168.1.6/raspi /media/samba-torrent/"           
 #connect samba#
-alias smb="smbclient //192.168.1.6/raspi/ -U transuser"     
+alias smb="smbclient //192.168.1.5/raspi/ "     
 #Directory Shortcuts:
 alias du="du -sh *"
 alias gh="cd ~ && ls -a"
@@ -108,12 +106,11 @@ alias gv="cd ~/Videos && ls -a"
 alias gm="cd ~/Music && ls -a"
 alias gb="cd ~/Books && ls -a"
 alias gi="cd ~/iso && ls -a"
+alias gq="cd ~/qemu-img && ls -a"
 alias gt='cd /media/samba-torrent/qbittorrent/download/ && ls -a'
 #SSH_CONNECTION
 alias pideb="ssh -l pablo 192.168.1.6"
-alias piarch='ssh -l  pablo 192.168.1.5'
-#SAMBA
-alias smb='smbclient -U transuser //192.168.1.6/raspi'
+alias pi='ssh -l  pablo 192.168.1.5'
 #vim mode
 #set -o vi
 #programs

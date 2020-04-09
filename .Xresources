@@ -40,8 +40,7 @@ URxvt.depth:		32
 
 
 ! -- Fonts -- !
-URxvt.font: xft:DejaVu Sans Mono:style=Book:pixelsize=25
-
+URxvt*font: xft:Inconsolata for Powerline:style=Medium:pixelsize=23
 URxvt.cursorBlink: true 
 URxvt.cursorUnderline: true 
 URxvt.scrollBar:	false
