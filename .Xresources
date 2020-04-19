@@ -1,48 +1,104 @@
+
+!!---------------------------------------------XTERM ----------------------------------------------------------------------------------------------------
+XTerm.vt100.foreground: white
+XTerm.vt100.background: black
+!!--cursor-xterm------
+XTerm*VT100*underLine: on
+!!-----fonts-xterm------!!
+XTerm*font: -*-terminus-medium-r-*-*-27-*-*-*-*-*-iso10646-*
+!XTerm.vt100.faceName:Inconsolata for powerline:style=Medium:pixelsize=25
+xterm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
+!BLK Cursor
+#define _color0        #000d18
+#define _color8        #000d18
+!RED Tag
+#define _color1        #e89393
+#define _color9        #e89393
+!GRN SpecialKey
+#define _color2        #9ece9e
+#define _color10       #9ece9e
+!YEL Keyword
+#define _color3        #f0dfaf
+#define _color11       #f0dfaf
+!BLU Number
+#define _color4        #8cd0d3
+#define _color12       #8cd0d3
+!MAG Precondit
+#define _color5        #c0bed1
+#define _color13       #c0bed1
+!CYN Float
+#define _color6        #dfaf8f
+#define _color14       #dfaf8f
+!WHT Search
+#define _color7        #efefef
+#define _color15       #efefef
+!FMT Include, StatusLine, ErrorMsg
+#define _colorBD       #ffcfaf
+#define _colorUL       #ccdc90
+#define _colorIT       #80d4aa
+!TXT Normal, Normal, Cursor
+#define _foreground    #dcdccc
+#define _background    #1f1f1f
+#define _cursorColor   #ffffff
+
+XTerm*foreground     : _foreground
+XTerm*background     : _background
+XTerm*cursorColor    : _cursorColor
+
+XTerm*color0         : _color0
+XTerm*color1         : _color1
+XTerm*color2         : _color2
+XTerm*color3         : _color3
+XTerm*color4         : _color4
+XTerm*color5         : _color5
+XTerm*color6         : _color6
+XTerm*color7         : _color7
+XTerm*color8         : _color8
+XTerm*color9         : _color9
+XTerm*color10        : _color10
+XTerm*color11        : _color11
+XTerm*color12        : _color12
+XTerm*color13        : _color13
+XTerm*color14        : _color14
+XTerm*color15        : _color15
+XTerm*colorBD        : _colorBD
+XTerm*colorIT        : _colorIT
+XTerm*colorUL        : _colorUL
+
+!!---------------------------------------------URXVT ----------------------------------------------------------------------------------------------------
+
 urxvt*foreground: white 
 urxvt*background: black
 
-!! black
-*color0: #1b1918
-*color8: #766e6b
-!!! red
-*color1: #f22c40
-*color9: #f22c40
-!!! green
-*color2: #5ab738
-*color10: #5ab738
-!!! yellow
-*color3: #d5911a
-*color11: #d5911a
-!!! blue
-*color4: #407ee7
-*color12: #407ee7
-!!! magenta
-*color5: #6666ea
-*color13: #6666ea
-!!! cyan
-*color6: #00ad9c
-*color14: #00ad9c
-!!! white
-*color7: #a8a19f
-*color15: #f1efee
 
-Xft.dpi: 144
-Xft.rgba:       rgb
-Xft.autohint:   0
-Xft.lcdfilter:  lcddefault
-Xft.hintstyle:  hintfull
-Xft.hinting:    1
-Xft.antialias:  1
-Xcursor.theme: Adwaita 
-!Xcursor.size: 45 
-URxvt.intensityStyles:	false
-URxvt.depth:		32
-
+urxvt*color0         : _color0
+urxvt*color1         : _color1
+urxvt*color2         : _color2
+urxvt*color3         : _color3
+urxvt*color4         : _color4
+urxvt*color5         : _color5
+urxvt*color6         : _color6
+urxvt*color7         : _color7
+urxvt*color8         : _color8
+urxvt*color9         : _color9
+urxvt*color10        : _color10
+urxvt*color11        : _color11
+urxvt*color12        : _color12
+urxvt*color13        : _color13
+urxvt*color14        : _color14
+urxvt*color15        : _color15
+urxvt*colorBD        : _colorBD
+urxvt*colorIT        : _colorIT
+urxvt*colorUL        : _colorUL
 
 ! -- Fonts -- !
-URxvt*font: xft:Inconsolata for Powerline:style=Medium:pixelsize=23
-URxvt.cursorBlink: true 
-URxvt.cursorUnderline: true 
+!URxvt*font: xft:Inconsolata for Powerline:style=Medium:pixelsize=25
+URxvt*font: -*-terminus-medium-r-*-*-27-*-*-*-*-*-iso10646-*
+!URxvt.cursorBlink: true 
+!URxvt.cursorUnderline: true 
 URxvt.scrollBar:	false
 URxvt.perl-lib: /home/pablo/.config/scripts
 !URxvt.cursorColor:	white
@@ -57,20 +113,21 @@ URxvt.keysym.Shift-Control-C: perl:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 
+!url rxvt
+URxvt.colorUL:	#4682B4
 
-URxvt.colorUL:		#4682B4
-rofi.color-enabled:	true
-rofi.color-window:	#000, #000, #000
-rofi.color-normal:	#111, #819396, #222, #008ed4, #ffffff
-rofi.color-active:	#002b37, #008ed4, #003643, #008ed4, #66c6ff
-rofi.color-urgent: #002b37, #da4281, #003643, #008ed4, #890661
+!!General -------------------------------------------------------------
 
-
-rofi.fake-transparency:	true
-rofi.lines:		3
-rofi.bw:		0
-rofi.opacity:		"10"
-rofi.hide-scrollbar:	true
-rofi.width: 30
+Xft.dpi: 144
+Xft.rgba:       rgb
+Xft.autohint:   0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting:    1
+Xft.antialias:  1
+Xcursor.theme: Adwaita 
+!Xcursor.size: 45 
+URxvt.intensityStyles:	false
+URxvt.depth:		32
 
 
