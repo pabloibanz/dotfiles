@@ -47,7 +47,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+q kill
 
 # start  (a program launcher)
-bindsym $mod+d exec "dmenu_run -fn 'Hack Nerd Font Mono-20'"
+bindsym $mod+d exec dmenu_run -nb "#000000" -nf "#ffffff" -sb "#073642" -sf "#fdf6e3" -fn 'terminus-30'
 ###---Arrow Keys---###
 bindsym $mod+Left		focus left
 bindsym $mod+Down		focus down
