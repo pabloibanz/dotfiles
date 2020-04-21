@@ -108,6 +108,8 @@ alias gb="cd ~/Books && ls -a"
 alias gi="cd ~/iso && ls -a"
 alias gq="cd ~/qemu-img && ls -a"
 alias gt='cd /media/samba-torrent/qbittorrent/download/ && ls -a'
+alias gbi='cd /media/disc1T-torrent/ && ls -a'
+alias ge='cd /media/samba-torrent/samba-server/lrn/ && ls -a'
 #SSH_CONNECTION
 alias pideb="ssh -l pablo 192.168.1.6"
 alias pi='ssh -l  pablo 192.168.1.5'
