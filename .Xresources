@@ -2,8 +2,6 @@
 !!---------------------------------------------XTERM ----------------------------------------------------------------------------------------------------
 XTerm.vt100.foreground: white
 XTerm.vt100.background: black
-!!--cursor-xterm------
-XTerm*VT100*underLine: on
 !!-----fonts-xterm------!!
 XTerm*font: -*-terminus-medium-r-*-*-27-*-*-*-*-*-iso10646-*
 !XTerm.vt100.faceName:Inconsolata for powerline:style=Medium:pixelsize=25
@@ -44,8 +42,8 @@ xterm*VT100.Translations: #override \
 #define _background    #1f1f1f
 #define _cursorColor   #ffffff
 
-XTerm*foreground     : _foreground
-XTerm*background     : _background
+!XTerm*foreground     : _foreground
+!XTerm*background     : _background
 XTerm*cursorColor    : _cursorColor
 
 XTerm*color0         : _color0
@@ -70,6 +68,9 @@ XTerm*colorUL        : _colorUL
 
 !!---------------------------------------------URXVT ----------------------------------------------------------------------------------------------------
 
+!urxvt*foreground     : _foreground
+!urxvt*background     : _background
+urxvt*cursorColor    : _cursorColor
 urxvt*foreground: white 
 urxvt*background: black
 
@@ -100,21 +101,8 @@ URxvt*font: -*-terminus-medium-r-*-*-27-*-*-*-*-*-iso10646-*
 !URxvt.cursorBlink: true 
 !URxvt.cursorUnderline: true 
 URxvt.scrollBar:	false
-URxvt.perl-lib: /home/pablo/.config/scripts
-!URxvt.cursorColor:	white
-URxvt.perl-ext-common:	resize-font,clipboard
 URxvt.url-launcher:	/usr/bin/xdg-open
 URxvt.matcher.button:	1
-URxvt.resize-font.smaller:	C-Down
-URxvt.resize-font.bigger: C-Up
-
-!!clipboard
-URxvt.keysym.Shift-Control-C: perl:clipboard:copy
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.iso14755: False
-
-!url rxvt
-URxvt.colorUL:	#4682B4
 
 !!General -------------------------------------------------------------
 
