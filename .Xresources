@@ -3,8 +3,8 @@
 XTerm.vt100.foreground: white
 XTerm.vt100.background: black
 !!-----fonts-xterm------!!
-XTerm*font: -*-terminus-medium-r-*-*-27-*-*-*-*-*-iso10646-*
-!XTerm.vt100.faceName:Inconsolata for powerline:style=Medium:pixelsize=25
+!XTerm*font: -*-terminus-medium-r-*-*-27-*-*-*-*-*-iso10646-*
+XTerm.vt100.faceName: Fira Code :style=Medium:pixelsize=24
 xterm*VT100.Translations: #override \
                  Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
                  Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
@@ -45,6 +45,8 @@ xterm*VT100.Translations: #override \
 !XTerm*foreground     : _foreground
 !XTerm*background     : _background
 XTerm*cursorColor    : _cursorColor
+XTerm*cursorBlink:true
+XTerm*cursorUnderLine:true
 
 XTerm*color0         : _color0
 XTerm*color1         : _color1
@@ -96,10 +98,10 @@ urxvt*colorIT        : _colorIT
 urxvt*colorUL        : _colorUL
 
 ! -- Fonts -- !
-!URxvt*font: xft:Inconsolata for Powerline:style=Medium:pixelsize=25
-URxvt*font: -*-terminus-medium-r-*-*-27-*-*-*-*-*-iso10646-*
-!URxvt.cursorBlink: true 
-!URxvt.cursorUnderline: true 
+URxvt*font: xft: Fira code :style=Medium:pixelsize=24
+!URxvt*font: -*-terminus-medium-r-*-*-27-*-*-*-*-*-iso10646-*
+URxvt.cursorBlink: true 
+URxvt.cursorUnderline: true 
 URxvt.scrollBar:	false
 URxvt.url-launcher:	/usr/bin/xdg-open
 URxvt.matcher.button:	1
