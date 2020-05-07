@@ -4,7 +4,7 @@ XTerm.vt100.foreground: white
 XTerm.vt100.background: black
 !!-----fonts-xterm------!!
 !XTerm*font: -*-terminus-medium-r-*-*-27-*-*-*-*-*-iso10646-*
-XTerm.vt100.faceName: Fira Code :style=Medium:pixelsize=24
+XTerm.vt100.faceName: Fira Code :style=Medium:pixelsize=18
 xterm*VT100.Translations: #override \
                  Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
                  Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
@@ -98,7 +98,7 @@ urxvt*colorIT        : _colorIT
 urxvt*colorUL        : _colorUL
 
 ! -- Fonts -- !
-URxvt*font: xft: Fira code :style=Medium:pixelsize=24
+URxvt*font: xft: Fira code :style=Medium:pixelsize=18
 !URxvt*font: -*-terminus-medium-r-*-*-27-*-*-*-*-*-iso10646-*
 URxvt.cursorBlink: true 
 URxvt.cursorUnderline: true 

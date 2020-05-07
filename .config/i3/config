@@ -17,10 +17,7 @@ exec --no-startup-id dunst
 #Pulse Audio controls alsa
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 1+ unmute #increase sound volume
 bindsym XF86AudioLowerVolume exec amixer -q set Master 1- unmute #decrease sound volume
-#laptop
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-#pc
-#bindsym XF86AudioMute exec amixer -D pulse set Master toggle # mute sound
+bindsym XF86AudioMute exec amixer -D pulse set Master toggle # mute sound
 
 # Screen brightness controls
 bindsym XF86MonBrightnessDown exec light -U 5; exec notify-send 'brightness down';
@@ -140,7 +137,7 @@ bar {
        	tray_output primary
         status_command i3status
 	status_command i3status -c  ~/.config/i3/i3status.conf
-	font pango: Terminus 9 
+	font pango: Terminus 8 
 }
 
 
