@@ -3,7 +3,7 @@ set $mod Mod4
 set $term urxvtc
 set $alt Mod1
 #font pango:Hack Nerd Font Mono 9 
-font pango:  Terminus 8 
+font pango:  Fira Code 6 
 
 #keyboard layaout
 bindsym Control+$alt+e exec --no-startup-id setxkbmap es
@@ -137,7 +137,7 @@ bar {
        	tray_output primary
         status_command i3status
 	status_command i3status -c  ~/.config/i3/i3status.conf
-	font pango: Terminus 8 
+	font pango: Fira Code 7 
 }
 
 
