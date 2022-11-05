@@ -7,8 +7,9 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="af-magic"
-
+export TERM="rxvt-unicode-256color"
+# Set name of the theme to load.
+ ZSH_THEME="af-magic"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -51,7 +52,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git wd textmate)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,35 +85,49 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export TERM='kitty'
 # update system
-#alias U='sudo  apt update'
-#alias UG='sudo apt upgrade'
+alias U='sudo  apt update'
+alias UG='sudo apt upgrade'
 alias apagar='sudo shutdown -h now'
-#alias I='sudo aptitude -v install'
+alias I='sudo aptitude -v install'
 alias v='nvim'
-alias music='ncmpcpp'
+alias archclean='sudo pacman -Rs $(pacman -Qtdq)'
+alias v-conf='nvim ~/.config/nvim/init.vim'
 alias e='emacs -nw'
+alias vscodium='codium --no-sandbox'
+alias codium='codium --no-sandbox'
+#multimedia
+alias yt='yt-dlp'
+alias ytf='ytfzf'
+#mount samba#
+alias mount-samba="sudo mount -t cifs -o username=transuser //192.168.1.6/raspi /media/samba-torrent/"           
 #connect samba#
-alias smb="smbclient //192.168.1.5/raspi/ "     
+alias smb="smbclient //192.168.1.6/raspi/ -U transuser"  
+#Super-programs
+alias df="duf"
+alias cat="bat"
+alias du="dust"
+alias ls="lsd"
 #Directory Shortcuts:
-alias du="du -sh *"
 alias gh="cd ~ && ls -a"
 alias gdo="cd ~/Documents && ls -a"
 alias gdw="cd ~/Downloads && ls -a"
-alias gdt="cd ~/dotfiles && ls -a"
 alias gw="cd ~/Work && ls -a"
 alias gp="cd ~/Pictures && ls -a"
 alias gv="cd ~/Videos && ls -a"
 alias gm="cd ~/Music && ls -a"
 alias gb="cd ~/Books && ls -a"
-alias gi="cd ~/iso && ls -a"
 alias gq="cd ~/qemu-img && ls -a"
+alias gi="cd ~/iso && ls -a"
 alias gt='cd /media/samba-torrent/qbittorrent/download/ && ls -a'
-alias gbi='cd /media/disc1T-torrent/ && ls -a'
-alias ge='cd /media/samba-torrent/samba-server/lrn/ && ls -a'
+alias gbi='cd /media/disc1T-torrent/'
+alias ge='cd /media/samba-torrent/samba-server/lrn/'
 #SSH_CONNECTION
 alias pideb="ssh -l pablo 192.168.1.6"
-alias pi='ssh -l  pablo 192.168.1.5'
+alias piarch='ssh -l  pablo 192.168.1.5'
+#SAMBA
+alias smb='smbclient -U qbtuser //192.168.1.6/raspi'
 #vim mode
 #set -o vi
 #programs
